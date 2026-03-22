@@ -1,0 +1,7 @@
+// FoxHT Server - Inter Server Config
+// UPDATE these with your MySQL credentials
+
+login_server_pw: ragnarok
+char_server_pw: ragnarok
+map_server_pw: ragnarok
+log_db_pw: ragnarok

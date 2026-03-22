@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Client binaries (too large for git)
+client/*.exe
+client/*.dll
+client/*.grf
+client/BGM/
+client/savedata/
+client/Screenshot/
+
+# Sensitive files
+*.pem
+*.key
+
+# Build artifacts
+*.o
+*.obj
+*.pdb

@@ -1,0 +1,22 @@
+// FoxHT PVP Warper NPC
+// Located in Prontera, near the fountain
+
+prontera,155,185,5	script	PVP Warper	4_F_KAFRA3,{
+	mes "[PVP Warper]";
+	mes "Welcome to FoxHT PVP!";
+	mes "Where would you like to go?";
+	next;
+	switch(select("Free-for-All PVP:1v1 Duel Room:Return to Prontera:Cancel")) {
+	case 1:
+		warp "pvp_n_1-5",0,0;
+		end;
+	case 2:
+		warp "pvp_n_2-5",0,0;
+		end;
+	case 3:
+		warp "prontera",155,180;
+		end;
+	case 4:
+		close;
+	}
+}

@@ -1,0 +1,121 @@
+// FoxHT Command Guide NPC
+// Located in Prontera, near the other custom NPCs
+
+prontera,150,185,5	script	Command Guide	4_M_TELEPORTER,{
+	mes "[Command Guide]";
+	mes "I can show you all available commands!";
+	mes "Choose a category:";
+	next;
+	switch(select("Teleport:Items & Zeny:Level & Job:Skills & Stats:Convenience:Info:Cancel")) {
+	case 1:
+		mes "[Command Guide]";
+		mes "^0000FF== Teleport Commands ==^000000";
+		mes " ";
+		mes "^009900@go <number>^000000 - Warp to a city";
+		mes "  0=Prontera, 1=Morocc, 2=Geffen";
+		mes "  3=Payon, 4=Alberta, 5=Izlude";
+		mes "  6=Al De Baran, 7=Lutie, 8=Comodo";
+		mes "  9=Yuno, 10=Amatsu, 11=Gonryun";
+		mes "  12=Umbala, 13=Niflheim, 14=Louyang";
+		mes "  15=Novice Ground, 16=Prison";
+		next;
+		mes "[Command Guide]";
+		mes "^009900@warp <map> <x> <y>^000000";
+		mes "  Warp to any map";
+		mes "  Ex: @warp prontera 155 180";
+		mes " ";
+		mes "^009900@jump^000000";
+		mes "  Random teleport on current map";
+		close;
+	case 2:
+		mes "[Command Guide]";
+		mes "^0000FF== Items & Zeny ==^000000";
+		mes " ";
+		mes "^009900@item <id> <qty>^000000";
+		mes "  Create an item";
+		mes "  Ex: @item 501 100 (Red Potion x100)";
+		mes " ";
+		mes "^009900@item2 <id> <qty> <identified>";
+		mes "  <broken> <refine> <card1-4>^000000";
+		mes "  Create item with properties";
+		mes " ";
+		mes "^009900@zeny <amount>^000000";
+		mes "  Give yourself zeny";
+		mes "  Ex: @zeny 1000000";
+		close;
+	case 3:
+		mes "[Command Guide]";
+		mes "^0000FF== Level & Job ==^000000";
+		mes " ";
+		mes "^009900@baselvl <level>^000000";
+		mes "  Set base level (max 99)";
+		mes "  Ex: @baselvl 99";
+		mes " ";
+		mes "^009900@joblvl <level>^000000";
+		mes "  Set job level (max 70)";
+		mes "  Ex: @joblvl 70";
+		mes " ";
+		mes "^009900@jobchange <id>^000000";
+		mes "  Change your class";
+		mes "  Ex: @jobchange 7 (Knight)";
+		mes "  Use @jobchange 0 for Novice";
+		close;
+	case 4:
+		mes "[Command Guide]";
+		mes "^0000FF== Skills & Stats ==^000000";
+		mes " ";
+		mes "^009900@allskill^000000";
+		mes "  Learn all skills for your class";
+		mes " ";
+		mes "^009900@reset^000000";
+		mes "  Reset stats AND skills";
+		mes " ";
+		mes "^009900@resetstat^000000";
+		mes "  Reset stat points only";
+		mes " ";
+		mes "^009900@resetskill^000000";
+		mes "  Reset skill points only";
+		mes " ";
+		mes "^009900@stpoint <amount>^000000";
+		mes "  Give stat points";
+		mes " ";
+		mes "^009900@skpoint <amount>^000000";
+		mes "  Give skill points";
+		close;
+	case 5:
+		mes "[Command Guide]";
+		mes "^0000FF== Convenience ==^000000";
+		mes " ";
+		mes "^009900@heal^000000 - Full HP/SP heal";
+		mes "^009900@storage^000000 - Open storage";
+		mes "^009900@autoloot^000000 - Auto-pickup drops";
+		mes "^009900@alootid <id>^000000 - Auto-loot specific item";
+		mes "^009900@autoloottype <type>^000000 - Auto-loot by type";
+		mes "^009900@autotrade^000000 - Vend while offline";
+		mes "^009900@speed <0-1000>^000000 - Change walk speed";
+		mes "  (0 = fastest, 150 = normal)";
+		mes "^009900@mount^000000 - Mount/dismount Peco";
+		mes "^009900@refresh^000000 - Refresh your client";
+		mes "^009900@noask^000000 - Block trade/party requests";
+		mes "^009900@noks^000000 - Kill steal protection";
+		close;
+	case 6:
+		mes "[Command Guide]";
+		mes "^0000FF== Information ==^000000";
+		mes " ";
+		mes "^009900@commands^000000 - List all commands";
+		mes "^009900@help <command>^000000 - Command details";
+		mes "^009900@rates^000000 - Show server rates";
+		mes "^009900@exp^000000 - Show your EXP info";
+		mes "^009900@mobinfo <name/id>^000000 - Monster info";
+		mes "^009900@iteminfo <name/id>^000000 - Item info";
+		mes "^009900@whodrops <name/id>^000000 - Who drops item";
+		mes "^009900@whereis <name/id>^000000 - Where is monster";
+		mes "^009900@showexp^000000 - Toggle EXP display";
+		mes "^009900@showzeny^000000 - Toggle zeny display";
+		mes "^009900@servertime^000000 - Server time";
+		close;
+	case 7:
+		close;
+	}
+}

@@ -1,0 +1,8 @@
+// FoxHT - Welcome message on login
+-	script	LoginMessage	FAKE_NPC,{
+	end;
+
+OnPCLoginEvent:
+	announce "O SAN DIEGO E NOSSO! E O RAG TAMBEM!!",bc_self,0xFFFF00;
+	end;
+}

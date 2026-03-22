@@ -1,0 +1,43 @@
+// FoxHT Instance Warper NPC
+// Located in Prontera, near the PVP Warper
+
+prontera,160,185,5	script	Instance Guide	4_F_KAFRA8,{
+	mes "[Instance Guide]";
+	mes "I can warp you to instance entrances.";
+	mes "Which instance would you like to go to?";
+	next;
+	switch(select("Endless Tower:Sealed Shrine:Orc's Memory:Nydhogg's Nest:Cancel")) {
+	case 1:
+		mes "[Instance Guide]";
+		mes "Endless Tower - a 100 floor";
+		mes "tower filled with monsters.";
+		mes "Good luck!";
+		close2;
+		warp "alberta",26,245;
+		end;
+	case 2:
+		mes "[Instance Guide]";
+		mes "Sealed Shrine - explore the";
+		mes "sealed monastery and face";
+		mes "the dark forces within.";
+		close2;
+		warp "monk_test",111,118;
+		end;
+	case 3:
+		mes "[Instance Guide]";
+		mes "Orc's Memory - relive the";
+		mes "memories of the Orc Hero.";
+		close2;
+		warp "gef_fild10",71,340;
+		end;
+	case 4:
+		mes "[Instance Guide]";
+		mes "Nydhogg's Nest - venture";
+		mes "deep into the dragon's lair.";
+		close2;
+		warp "nyd_dun02",122,86;
+		end;
+	case 5:
+		close;
+	}
+}

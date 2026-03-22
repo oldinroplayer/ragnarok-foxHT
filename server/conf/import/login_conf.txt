@@ -1,0 +1,4 @@
+// FoxHT Server - Login Server Config
+
+// Allow creating accounts with _M/_F suffix
+new_account: yes

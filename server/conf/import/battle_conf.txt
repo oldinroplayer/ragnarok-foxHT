@@ -1,0 +1,48 @@
+// FoxHT Server - Battle Config Overrides
+// Pre-Renewal | 100x/100x/20x | Episode 13.2 (Satan Morroc)
+
+// ========== EXP RATES ==========
+base_exp_rate: 10000
+job_exp_rate: 10000
+mvp_exp_rate: 10000
+quest_exp_rate: 10000
+
+// Allow multi level up (high rates make this useful)
+multi_level_up: yes
+
+// ========== DROP RATES ==========
+// 20x = 2000 in rAthena (100 = 1x)
+item_rate_common: 2000
+item_rate_common_boss: 2000
+item_rate_common_mvp: 2000
+item_rate_heal: 2000
+item_rate_heal_boss: 2000
+item_rate_heal_mvp: 2000
+item_rate_use: 2000
+item_rate_use_boss: 2000
+item_rate_use_mvp: 2000
+item_rate_equip: 2000
+item_rate_equip_boss: 2000
+item_rate_equip_mvp: 2000
+item_rate_card: 2000
+item_rate_card_boss: 2000
+item_rate_card_mvp: 2000
+item_rate_mvp: 2000
+
+// ========== DEATH PENALTY ==========
+// Reduced penalty for fun server
+death_penalty_type: 1
+death_penalty_base: 50
+death_penalty_job: 50
+
+// ========== DISPLAY ==========
+// Show exp gained from kills
+disp_experience: yes
+disp_zeny: yes
+
+// Announce rare drops (1% or less)
+rare_drop_announce: 100
+
+// ========== PVP / CONVENIENCE ==========
+// Allow players to use @commands
+atcommand_enable_char_charcommand: yes

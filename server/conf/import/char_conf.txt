@@ -1,0 +1,17 @@
+// FoxHT Server - Character Server Config
+
+// Server name displayed in client
+server_name: FoxHT
+
+// Starting zeny for new characters
+start_zeny: 1000
+
+// Disable pincode for convenience (small private server)
+pincode_enabled: no
+
+// Disable character deletion delay (convenience)
+char_del_delay: 0
+
+// Public IP for external connections (AWS EC2)
+// UPDATE THIS to your server's public IP
+char_ip: 56.126.166.250

@@ -1,0 +1,5 @@
+// FoxHT Server - Map Server Config
+
+// Public IP for external connections (AWS EC2)
+// UPDATE THIS to your server's public IP
+map_ip: 56.126.166.250

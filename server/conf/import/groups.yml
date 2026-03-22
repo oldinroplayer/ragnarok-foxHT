@@ -1,0 +1,60 @@
+Header:
+  Type: PLAYER_GROUP_DB
+  Version: 1
+
+Body:
+  # Override default Player group with more commands for a fun private server
+  - Id: 0
+    Name: Player
+    Level: 0
+    Commands:
+      # Informational
+      commands: true
+      help: true
+      rates: true
+      exp: true
+      mobinfo: true
+      iteminfo: true
+      whodrops: true
+      whereis: true
+      showexp: true
+      showzeny: true
+      servertime: true
+      # Convenience
+      refresh: true
+      noask: true
+      noks: true
+      autoloot: true
+      alootid: true
+      autoloottype: true
+      autotrade: true
+      go: true
+      channel: true
+      storage: true
+      jailtime: true
+      # Teleport
+      warp: true
+      jump: true
+      # Items and Zeny
+      item: true
+      item2: true
+      zeny: true
+      # Level and Job
+      baselvl: true
+      joblvl: true
+      jobchange: true
+      # Reset and Skills
+      reset: true
+      resetskill: true
+      resetstat: true
+      allskill: true
+      stpoint: true
+      skpoint: true
+      # Convenience
+      heal: true
+      speed: true
+      mount: true
+    Permissions:
+      can_trade: true
+      can_party: true
+      attendance: true
