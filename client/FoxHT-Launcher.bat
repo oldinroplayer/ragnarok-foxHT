@@ -53,7 +53,7 @@ call "_patch.bat"
 del /q "_patch.bat" 2>nul
 
 :: Update local version
-echo %REMOTE_VER%> "_local_version.txt"
+(echo %REMOTE_VER%)> "_local_version.txt"
 echo.
 echo  Atualizado com sucesso para v%REMOTE_VER%!
 echo.
