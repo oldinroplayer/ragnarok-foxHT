@@ -1,4 +1,4 @@
-:: FoxHT Patch v5 - Fixes + Traducao EN (itens e skills)
+:: FoxHT Patch v6 - Fix itemInfo corrigido + Bragi Scroll
 :: Este arquivo e baixado e executado pelo launcher automaticamente
 
 set "REPO=https://raw.githubusercontent.com/lucasarlop/ragnarok/main"
@@ -33,7 +33,7 @@ echo  [3/5] Baixando traducao de skills (EN)...
 curl -s -f "%REPO%/client/data/skillnametable.txt" -o "data\skillnametable.txt" 2>nul
 curl -s -f "%REPO%/client/data/skilldesctable.txt" -o "data\skilldesctable.txt" 2>nul
 
-echo  [4/5] Baixando traducao de itens (EN)...
+echo  [4/5] Baixando traducao de itens (EN) + Bragi Scroll...
 echo         (arquivo grande, pode demorar um pouco)
 curl -s -f -L "%REPO%/client/System/itemInfo_true.lub" -o "System\itemInfo_true.lub" 2>nul
 if exist "System\itemInfo_true.lub" (
